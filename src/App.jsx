@@ -160,7 +160,7 @@ const App = () => {
       {/* About Us Section */}
 
 {/* About Us Section */}
-<section id="about" className="py-20 bg-white" data-aos="fade-up">
+<section id="about" className="py-24 px-6 bg-white" data-aos="fade-up">
   <div className="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
     {/* Logo Image on the left */}
     <div className="md:w-1/3 flex justify-center md:justify-start">
