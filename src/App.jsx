@@ -30,59 +30,60 @@ const App = () => {
   return (
     <div className="font-sans bg-gray-50 text-gray-900 min-h-screen flex flex-col">
       {/* Navbar */}
-      <nav className="p-6 fixed w-full bg-white shadow-md z-10">
-        <div className="container mx-auto flex justify-between items-center">
-          {/* Brand logo and name */}
-          <div className="flex items-center">
-            <img
-              src={Logo}
-              alt="Brand Logo"
-              className="h-12 w-12 mr-3 animate-bounce"
-            />
-            <h1 className="text-xl font-semibold text-gray-800">uiuxclub</h1>
-          </div>
-          {/* Hamburger Menu Button for Mobile */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="focus:outline-none"
-            >
-              <FontAwesomeIcon
-                icon={menuOpen ? faTimes : faBars}
-                className="text-2xl text-gray-700"
-              />
-            </button>
-          </div>
-          {/* Navigation Links for larger screens */}
-          <ul className="hidden md:flex space-x-8 text-gray-700">
-            <li>
-              <a
-                href="#about"
-                className="hover:text-blue-500 transition duration-200"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#features"
-                className="hover:text-blue-500 transition duration-200"
-              >
-                Features
-              </a>
-            </li>
+      <nav className="p-6 fixed w-full bg-white bg-opacity-90 shadow-md z-10 transition duration-300 ease-in-out">
+  <div className="container mx-auto flex justify-between items-center">
+    {/* Brand logo and name */}
+    <div className="flex items-center">
+      <img
+        src={Logo}
+        alt="Brand Logo"
+        className="h-12 w-12 mr-3 animate-bounce"
+      />
+      <h1 className="text-xl font-semibold text-gray-800">UI/UXclub</h1>
+    </div>
+    {/* Hamburger Menu Button for Mobile */}
+    <div className="md:hidden">
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="focus:outline-none hover:text-blue-500 transition duration-300 ease-in-out"
+      >
+        <FontAwesomeIcon
+          icon={menuOpen ? faTimes : faBars}
+          className="text-2xl text-gray-700"
+        />
+      </button>
+    </div>
+    {/* Navigation Links for larger screens */}
+    <ul className="hidden md:flex space-x-8 text-gray-700">
+      <li>
+        <a
+          href="#about"
+          className="hover:text-blue-500 hover:underline transition duration-300 ease-in-out"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="#features"
+          className="hover:text-blue-500 hover:underline transition duration-300 ease-in-out"
+        >
+          Features
+        </a>
+      </li>
 
-            <li>
-              <a
-                href="#contact"
-                className="hover:text-blue-500 transition duration-200"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <li>
+        <a
+          href="#contact"
+          className="hover:text-blue-500 hover:underline transition duration-300 ease-in-out"
+        >
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
       {/* Mobile Menu - Fullscreen Overlay with Close Icon */}
       <div
