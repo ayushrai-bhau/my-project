@@ -16,6 +16,7 @@ import Logo from "./assets/uiuxlogo.png";
 import Img1 from "./assets/Img-1.jpg";
 import Img2 from "./assets/Img-2.jpg";
 import Img3 from "./assets/Img-3.jpg";
+import Img4 from "./assets/UiuxPic.jpg";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -157,25 +158,41 @@ const App = () => {
 
 
       {/* About Us Section */}
-      <section id="about" className="py-20 bg-white" data-aos="fade-up">
-  <div className="container mx-auto">
-    <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
-      About Us
-    </h2>
-    <p className="text-center text-gray-700 leading-relaxed max-w-3xl mx-auto text-lg md:text-xl">
-      uiuxclub is a thriving community built for UI/UX professionals,
-      whether you're an experienced designer or just starting. Our
-      platform offers a supportive space for growth, learning, and
-      collaboration. With workshops, webinars, and access to exclusive job
-      listings, uiuxclub helps you stay updated and connected with
-      industry leaders. Members can showcase their work, participate in
-      design challenges, and get feedback from peers. Our vast library of
-      learning resources includes articles and tutorials, making it easy
-      to stay current on the latest design trends. Join uiuxclub to
-      elevate your UI/UX career.
-    </p>
+
+{/* About Us Section */}
+<section id="about" className="py-20 bg-white" data-aos="fade-up">
+  <div className="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+    {/* Logo Image on the left */}
+    <div className="md:w-1/3 flex justify-center md:justify-start">
+      <img
+        src={Img4}
+        alt="UI/UX Club Logo"
+        className="h-48 w-48 object-cover rounded-lg shadow-lg"
+      />
+    </div>
+    {/* About Us Text on the right */}
+    <div className="md:w-2/3 text-left">
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">
+        About Us
+      </h2>
+      <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
+        uiuxclub is a thriving community built for UI/UX professionals,
+        whether you're an experienced designer or just starting. Our
+        platform offers a supportive space for growth, learning, and
+        collaboration. With workshops, webinars, and access to exclusive job
+        listings, uiuxclub helps you stay updated and connected with
+        industry leaders. Members can showcase their work, participate in
+        design challenges, and get feedback from peers. Our vast library of
+        learning resources includes articles and tutorials, making it easy
+        to stay current on the latest design trends. Join uiuxclub to
+        elevate your UI/UX career.
+      </p>
+    </div>
   </div>
 </section>
+
+
+
 
 
       {/* Key Features Section */}
